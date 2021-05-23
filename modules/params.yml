@@ -1,0 +1,78 @@
+con_params:
+  key: 'b0e81f91a706e123b8ceae5f7cc99888'
+  token: '1fa42400b8f4b8ca5334641a5ffb1cf05bda2f6ac97480e20672b0807f5f3a3e'
+
+board_id: 'asjaJmr2'
+
+chart_kwargs:
+  bar:
+    width: 900
+    height: 500
+  line:
+    width: 900
+    height: 500
+  y_axes:
+    showgrid: True
+    gridwidth: 1
+    gridcolor: silver
+    tickformat: ',d'
+    title: null
+    fixedrange: True
+  x_axes:
+    dtick: M1
+    tickformat: '%b %Y'
+    tickangle: -90
+    title: null
+    ticks: outside
+    fixedrange: True
+  bar_traces:
+    textposition: outside
+  line_traces:
+    mode: markers+lines
+    marker_size: 12
+    line_width: 3
+  layout:
+    margin_r: 250
+    margin_l: 0
+    margin_b: 0
+    title_font_size: 24
+    title_y: 0.9
+    title_x: 0
+    legend_title: null
+    paper_bgcolor: 'rgba(0,0,0,0)'
+    plot_bgcolor: 'rgba(0,0,0,0)'
+  palette:
+    cyan:
+      - '#D7FFF8'
+      - '#97FCED'
+      - '#7CD1CF'
+      - '#67AFB7'
+      - '#4A7C8E'
+      - '#314E66'
+      - '#273C54'
+      - '#192833'
+      - '#0F191E'
+      - '#05090A'
+    gold:
+      - '#FFF1B6'
+      - '#F7E07C'
+      - '#F5D222'
+      - '#DCBD1E'
+      - '#C1A323'
+      - '#8C771E'
+      - '#72611A'
+      - '#594C16'
+      - '#3D3411'
+      - '#231D0B'
+    silver:
+      - '#E8E8E8'
+      - '#DBDBDB'
+      - '#BCBCBC'
+      - '#9E9E9E'
+      - '#7F7F7F'
+      - '#656565'
+      - '#545454'
+      - '#333333'
+      - '#232323'
+      - '#141414'
+
