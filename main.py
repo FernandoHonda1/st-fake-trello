@@ -40,11 +40,11 @@ df = df.groupby(['name_x', 'cat'])['count']\
     .drop('cat', axis=1)
 
 # nomes de colunas hard coded (se é que isso é válido)
-slice_df = df.loc[df['name_x'].isin(['Funil 1 | Entrevista RH',
-                                     'Funil 1.1 | Desafio técnico',
-                                     'Funil 2 | Etapa Técnica',
-                                     'Funil 3 | Entrevista Final'])]
-
+# slice_df = df.loc[df['name_x'].isin(['Funil 1 | Entrevista RH',
+#                                      'Funil 1.1 | Desafio técnico',
+#                                      'Funil 2 | Etapa Técnica',
+#                                      'Funil 3 | Entrevista Final'])]
+slice_df = df.copy()
 chart_kwargs = params['chart_kwargs']
 color_palette = [color for colors in zip(
                 chart_kwargs['palette']['silver'],
@@ -65,5 +65,5 @@ fig.update_layout(chart_kwargs['layout'])
 st.plotly_chart(fig,
             use_container_width=False, config={'displayModeBar':False}, layout=fig.layout)
 
-# st.dataframe(df)
+st.dataframe(slice_df)
 st.markdown(download_link.download_link(df), unsafe_allow_html=True)
